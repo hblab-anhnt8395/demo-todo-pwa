@@ -64,10 +64,10 @@ export function AddTodoForm({ onAdd }: Props) {
         <button
           type="submit"
           disabled={!text.trim()}
-          className="flex items-center gap-2 px-5 py-3 rounded-xl bg-violet-600 hover:bg-violet-700 disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-medium transition shadow-sm shadow-violet-200 dark:shadow-none"
+          className="flex items-center justify-center gap-2 px-3 sm:px-5 py-3 rounded-xl bg-violet-600 hover:bg-violet-700 disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-medium transition shadow-sm shadow-violet-200 dark:shadow-none flex-shrink-0"
         >
-          <Plus size={16} />
-          Thêm
+          <Plus size={18} />
+          <span className="hidden sm:inline">Thêm</span>
         </button>
       </div>
 
